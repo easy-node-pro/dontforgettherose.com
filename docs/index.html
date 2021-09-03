@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Don't Forget The Rose</title>
+
 <body>
     <center>
-        <form action="https://davinci.gallery/artist/DontForgetTheRose" method="get"><input type="image" width="40%" height="40%" src="img/dftr_full_color.png" class="myButton" alt="Click Here to read our blog Now!" target=_blank></form>
+        <form action="https://davinci.gallery/artist/DontForgetTheRose" method="get"><input type="image" width="40%"
+                height="40%" src="img/dftr_full_color.png" class="myButton" alt="Click Here to read our blog Now!"
+                target=_blank></form>
+
+        var hexArray = ['#hexVal','#hexVal','#hexval', '#hexval']
+        var randomColor = hexArray[Math.floor(Math.random() * hexArray.length)];
+
+        $("#divId").css("color",randomColor); //A class selector would work too
 </body>
